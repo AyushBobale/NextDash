@@ -1,0 +1,7 @@
+.home-cont {
+  display: flex;
+  align-items: stretch;
+  /* gap: 50px; */
+  /* justify-content: space-between; */
+  min-height: 100%;
+}

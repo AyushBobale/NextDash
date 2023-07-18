@@ -1,0 +1,42 @@
+.sidebar {
+  position: relative;
+  padding: 25px;
+  padding-top: 42px;
+  top: 0;
+  left: 0;
+  background: var(--primary-bg);
+  width: var(--side-width);
+  min-height: calc(100vh - var(--nav-height));
+  border-right: 2px solid var(--border-cl);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.btm {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.btm > div {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btm > div > img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
