@@ -6,6 +6,7 @@ import Image from "next/image";
 import Search from "../../../public/static/images/search.svg";
 import Tasks from "../../../public/static/images/tasks.svg";
 import TimeLine from "../../../public/static/images/ham-menu.svg";
+import TodoCol from "./TodoCol";
 import styles from "../components/css/TodoContainer.module.css";
 
 const TodoContainer = () => {
@@ -45,6 +46,11 @@ const TodoContainer = () => {
             <Image src={Search} alt="" />
           </div>
         </div>
+      </div>
+
+      <div className={styles["todo-col-cont"]}>
+        <TodoCol title={"TO DO"} color={"red"} />
+        <TodoCol title={"IN WORK"} color={"blue"} />
       </div>
     </div>
   );
