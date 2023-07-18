@@ -1,0 +1,33 @@
+.todo-wrap {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+}
+
+.todo-wrap > img {
+  width: 100%;
+  height: auto;
+}
+
+.todo-inner {
+  padding: 15px;
+}
+
+.profile-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--grey-blue-80);
+}
+
+.task-name {
+  color: var(--grey-blue-60);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+}
