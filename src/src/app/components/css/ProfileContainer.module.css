@@ -1,6 +1,6 @@
 .profile-pad-cont {
   padding: 50px;
-  border-right: 2px solid var(--border-cl);
+  /* border-right: 2px solid var(--border-cl); */
   min-height: 100%;
 }
 
@@ -152,6 +152,8 @@
   box-shadow: 0px 10px 30px 0px rgba(38, 51, 77, 0.03);
   border: none;
   position: absolute;
+  color: var(--primary-hl);
+  font-weight: 900;
 }
 
 .contact-opts {
