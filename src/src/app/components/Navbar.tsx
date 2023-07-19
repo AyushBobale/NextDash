@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className={styles.right}>
         <span>
           <Image src={AccountCircle} alt="account" />
-          Clayton Santos
+          <p>Clayton Santos</p>
         </span>
         <div className={styles["noti-cont"]}>
           <IconButton svg={Close} />

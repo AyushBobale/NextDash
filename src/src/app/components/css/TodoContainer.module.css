@@ -98,3 +98,45 @@
   display: flex;
   gap: 30px;
 }
+
+.top-nav-inner-mobile,
+.tabs-mobile,
+.tabs-mobile > div {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-inner-mobile {
+  gap: 15px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.tabs-mobile {
+  gap: 25px;
+}
+.tabs-mobile > div {
+  gap: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  .todo-cont {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .search-bar,
+  .search-bar > input {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+  }
+
+  .top-nav-inner {
+    display: none;
+  }
+
+  .todo-col-cont {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+}

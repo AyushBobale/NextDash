@@ -109,3 +109,31 @@
   flex-shrink: 0;
   padding-left: 55px;
 }
+
+@media screen and (max-width: 1400px) {
+  .links {
+    display: none;
+  }
+
+  .search-cont {
+    display: none;
+  }
+
+  .right > span {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right > span > p {
+    display: none;
+  }
+
+  .noti-cont {
+    display: none;
+  }
+}

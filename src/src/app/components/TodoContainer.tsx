@@ -11,7 +11,10 @@ import Avtaar9 from "../../../public/static/images/Avatar Image(8).png";
 import Calender from "../../../public/static/images/event.svg";
 import Dashboard from "../../../public/static/images/dashboard.svg";
 import Gantt from "../../../public/static/images/gantt.svg";
+import IconButton from "./IconButton";
 import Image from "next/image";
+import LeftNav from "../../../public/static/images/left-nav.svg";
+import RightNav from "../../../public/static/images/right-nav.svg";
 import Search from "../../../public/static/images/search.svg";
 import Task1 from "../../../public/static/images/task1.png";
 import Task2 from "../../../public/static/images/task2.png";
@@ -110,34 +113,45 @@ const TodoContainer = () => {
           <div className={styles["tabs"]}>
             <div>
               <Image src={Tasks} alt="" />
-              List Tasks
+              <p>List Tasks</p>
             </div>
             <div>
               <Image src={Dashboard} alt="" />
-              Boards
+              <p>Boards</p>
             </div>
             <div>
               <Image src={Calender} alt="" />
-              Calendar
+              <p>Calendar</p>
             </div>
             <div>
               <Image src={Gantt} alt="" />
-              Gantt
+              <p>Gantt</p>
             </div>
             <div>
               <Image src={TimeLine} alt="" />
-              Timeline
+              <p>Timeline</p>
             </div>
             <div>
               <Image src={Activity} alt="" />
-              Activity
+              <p>Activity</p>
             </div>
           </div>
 
           <div className={styles["search-bar"]}>
-            <input type="text" placeholder="Search Tasks" />
+            <input type="text" placeholder={"Search Tasks"} />
             <Image src={Search} alt="" />
           </div>
+        </div>
+        <div className={styles["top-nav-inner-mobile"]}>
+          <div className={styles["tabs-mobile"]}>
+            <IconButton svg={LeftNav} />
+            <div>
+              <Image src={Dashboard} alt="" />
+              <p>Boards</p>
+            </div>
+            <IconButton svg={RightNav} />
+          </div>
+          <IconButton svg={Search} />
         </div>
       </div>
 

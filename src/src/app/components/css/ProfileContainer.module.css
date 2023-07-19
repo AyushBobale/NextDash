@@ -174,3 +174,9 @@
   width: 30px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1400px) {
+  .profile-pad-cont {
+    display: none;
+  }
+}
