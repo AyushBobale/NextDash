@@ -49,8 +49,10 @@ const TodoContainer = () => {
       </div>
 
       <div className={styles["todo-col-cont"]}>
-        <TodoCol title={"TO DO"} color={"red"} />
-        <TodoCol title={"IN WORK"} color={"blue"} />
+        <TodoCol title={"TO DO"} color={"#8833FF"} />
+        <TodoCol title={"IN WORK"} color={"#33BFFF"} />
+        <TodoCol title={"REVIEW"} color={"#FFCB33"} />
+        <TodoCol title={"DONE"} color={"#29CC39"} />
       </div>
     </div>
   );

@@ -42,6 +42,6 @@ body {
 .main {
   /* margin-left: var(--side-width); */
 
-  width: 100%;
+  width: calc(100% - var(--side-width));
   background: var(--primary-bg);
 }

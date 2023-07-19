@@ -9,6 +9,16 @@ import ThreeDotsH from "../../../public/static/images/h-3-dots.svg";
 import Todo from "./Todo";
 import styles from "../components/css/TodoCol.module.css";
 
+const tasks = [
+  {
+    image: Task1,
+    taskCategory: "Space Task 2",
+    taskName: "Make money online",
+    avtaar: [Avtaar1, Avtaar2, Avtaar3],
+    duration: { tasks: 4, attachments: 2, daysLeft: 6 },
+  },
+];
+
 const TodoCol = ({ title, color, todos }) => {
   return (
     <div className={styles["todo-col"]}>
@@ -29,14 +39,14 @@ const TodoCol = ({ title, color, todos }) => {
       </div>
 
       <div className={styles["todos-map"]}>
-        {[0, 1].map((elm, idx) => {
+        {tasks.map((elm, idx) => {
           return (
             <Todo
-              image={Task1}
-              taskCategory={"Space Task 2"}
-              taskName={"Make money online"}
-              profiles={[Avtaar1, Avtaar2, Avtaar3]}
-              duration={{ tasks: 4, attachments: 2, daysLeft: 6 }}
+              image={elm.image}
+              taskCategory={elm.taskCategory}
+              taskName={elm.taskName}
+              profiles={elm.avtaar}
+              duration={elm.duration}
             />
           );
         })}
