@@ -1,3 +1,4 @@
+import PopUp from "./components/PopUp";
 import ProfileContainer from "./components/ProfileContainer";
 import TodoContainer from "./components/TodoContainer";
 import styles from "./page.module.css";
@@ -7,6 +8,7 @@ export default function Home() {
     <div className={styles["home-cont"]}>
       <ProfileContainer />
       <TodoContainer />
+      <PopUp />
     </div>
   );
 }
