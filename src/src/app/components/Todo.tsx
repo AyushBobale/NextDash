@@ -35,7 +35,9 @@ const Todo = ({ image, taskCategory, taskName, profiles, duration }) => {
             <span>
               <Image src={Attachment} alt="" /> {duration?.attachments}
             </span>
-            <span>
+            <span
+              className={duration?.daysLeft <= 1 ? styles["red-filter"] : ""}
+            >
               <Image src={Time} alt="" />
               {duration?.daysLeft} Days left
             </span>

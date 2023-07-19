@@ -25,6 +25,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scrollbar-width: thin;
 }
 
 html,
@@ -41,7 +42,6 @@ body {
 
 .main {
   /* margin-left: var(--side-width); */
-
   width: calc(100% - var(--side-width));
   background: var(--primary-bg);
 }

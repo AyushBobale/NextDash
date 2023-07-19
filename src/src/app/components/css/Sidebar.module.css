@@ -1,17 +1,20 @@
 .sidebar {
-  position: relative;
+  position: sticky;
   padding: 25px;
   padding-top: 42px;
-  top: 0;
+  top: var(--nav-height);
   left: 0;
   background: var(--primary-bg);
   width: var(--side-width);
   min-height: calc(100vh - var(--nav-height));
+  max-height: calc(100vh - var(--nav-height));
   border-right: 2px solid var(--border-cl);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* overflow-y: scroll; */
+  gap: 20px;
 }
 
 .top {
