@@ -1,7 +1,9 @@
 .profile-pad-cont {
-  padding: 50px;
+  padding: 25px;
   /* border-right: 2px solid var(--border-cl); */
   min-height: 100%;
+  padding-top: 50px;
+  /* padding-right: 25px; */
 }
 
 .profile-cont {
