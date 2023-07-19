@@ -102,7 +102,8 @@
 .top-nav-inner-mobile,
 .tabs-mobile,
 .tabs-mobile > div {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
 }
 
@@ -119,6 +120,12 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .top-nav-inner-mobile,
+  .tabs-mobile,
+  .tabs-mobile > div {
+    display: flex;
+    align-items: center;
+  }
   .todo-cont {
     width: calc(100% - 20px);
     margin: 10px;
