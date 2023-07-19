@@ -4,7 +4,7 @@ import ThreeDotsH from "../../../public/static/images/h-3-dots.svg";
 import Todo from "./Todo";
 import styles from "../components/css/TodoCol.module.css";
 
-const TodoCol = ({ title, color, tasks }) => {
+const TodoCol = ({ title, color, tasks }: any) => {
   return (
     <div className={styles["todo-col"]}>
       <div className={styles["todo-col-head-wrapper"]}>
@@ -24,7 +24,7 @@ const TodoCol = ({ title, color, tasks }) => {
       </div>
 
       <div className={styles["todos-map"]}>
-        {tasks.map((elm, idx) => {
+        {tasks.map((elm: any, idx: any) => {
           return (
             <Todo
               image={elm.image}

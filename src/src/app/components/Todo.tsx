@@ -4,7 +4,7 @@ import TaskList from "../../../public/static/images/list.svg";
 import Time from "../../../public/static/images/access_alarms.svg";
 import styles from "../components/css/Todo.module.css";
 
-const Todo = ({ image, taskCategory, taskName, profiles, duration }) => {
+const Todo = ({ image, taskCategory, taskName, profiles, duration }: any) => {
   return (
     <div className={styles["todo-wrap"]}>
       {image && <Image src={image} alt="" />}
@@ -12,7 +12,7 @@ const Todo = ({ image, taskCategory, taskName, profiles, duration }) => {
         <div className={styles["profile-cont"]}>
           {taskCategory}
           <div className={styles["profile-imgs"]}>
-            {profiles?.map((elm, idx) => {
+            {profiles?.map((elm: any, idx: any) => {
               return (
                 <Image
                   src={elm}
