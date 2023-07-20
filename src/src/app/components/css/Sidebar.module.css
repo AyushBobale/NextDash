@@ -27,7 +27,6 @@
   display: flex;
   gap: 15px;
   flex-direction: column;
-  padding-bottom: 25px;
 }
 
 .btm > div {

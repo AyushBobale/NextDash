@@ -115,7 +115,7 @@ const TodoContainer = () => {
               <Image src={Tasks} alt="" />
               <p>List Tasks</p>
             </div>
-            <div>
+            <div className={styles["active"]}>
               <Image src={Dashboard} alt="" />
               <p>Boards</p>
             </div>
@@ -144,12 +144,16 @@ const TodoContainer = () => {
         </div>
         <div className={styles["top-nav-inner-mobile"]}>
           <div className={styles["tabs-mobile"]}>
-            <IconButton svg={LeftNav} />
-            <div>
+            <span>
+              <Image src={LeftNav} alt="" />
+            </span>
+            <div className={styles["active"]}>
               <Image src={Dashboard} alt="" />
               <p>Boards</p>
             </div>
-            <IconButton svg={RightNav} />
+            <span>
+              <Image src={RightNav} alt="" />
+            </span>
           </div>
           <IconButton svg={Search} />
         </div>
@@ -158,8 +162,19 @@ const TodoContainer = () => {
       <div className={styles["todo-col-cont"]}>
         <TodoCol title={"TO DO"} color={"#8833FF"} tasks={taskTodo} />
         <TodoCol title={"IN WORK"} color={"#33BFFF"} tasks={taskWork} />
-        <TodoCol title={"REVIEW"} color={"#FFCB33"} tasks={taskReview} />
-        <TodoCol title={"DONE"} color={"#29CC39"} tasks={taskDone} />
+        <TodoCol
+          title={"REVIEW"}
+          color={"#FFCB33"}
+          tasks={taskReview}
+          newTask={true}
+          notAddTask={true}
+        />
+        <TodoCol
+          title={"DONE"}
+          color={"#29CC39"}
+          tasks={taskDone}
+          notAddTask={true}
+        />
       </div>
     </div>
   );

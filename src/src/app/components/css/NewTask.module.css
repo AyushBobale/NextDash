@@ -1,0 +1,66 @@
+.new-task-wrap {
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.top-ip-grp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-ip-grp > image {
+  height: 30px;
+  width: 30px;
+}
+
+.top-ip-grp > input {
+  max-width: 100px;
+  border: none;
+  color: var(--grey-blue-80);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+}
+
+.btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btm-ic-grp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btm-ic-grp > img {
+  height: 30px;
+  width: 30px;
+}
+
+.save-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid var(--blue, #3361ff);
+  background: var(--blue, #3361ff);
+
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 20px; /* 200% */
+}

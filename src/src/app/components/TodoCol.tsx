@@ -1,10 +1,11 @@
 import Add from "../../../public/static/images/add.svg";
 import Image from "next/image";
+import NewTask from "./NewTask";
 import ThreeDotsH from "../../../public/static/images/h-3-dots.svg";
 import Todo from "./Todo";
 import styles from "../components/css/TodoCol.module.css";
 
-const TodoCol = ({ title, color, tasks }: any) => {
+const TodoCol = ({ title, color, tasks, notAddTask, newTask }: any) => {
   return (
     <div className={styles["todo-col"]}>
       <div className={styles["todo-col-head-wrapper"]}>
@@ -36,7 +37,8 @@ const TodoCol = ({ title, color, tasks }: any) => {
           );
         })}
       </div>
-      <span className={styles["new-task"]}>+ NEW TASK</span>
+      {newTask && <NewTask />}
+      {!notAddTask && <span className={styles["new-task"]}>+ NEW TASK</span>}
     </div>
   );
 };
