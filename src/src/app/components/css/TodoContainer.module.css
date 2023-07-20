@@ -181,6 +181,11 @@
     margin: 10px;
   }
 
+  .todo-cont-wrap {
+    /* max-height: calc(100vh - var(--nav-height)); */
+    padding: 10px;
+  }
+
   .search-bar,
   .search-bar > input {
     padding: 0;
