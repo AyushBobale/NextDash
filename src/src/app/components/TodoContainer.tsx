@@ -107,74 +107,74 @@ const taskDone = [
 
 const TodoContainer = () => {
   return (
-    <div className={styles["todo-cont"]}>
-      <div className={styles["top-nav"]}>
-        <div className={styles["top-nav-inner"]}>
-          <div className={styles["tabs"]}>
-            <div>
-              <Image src={Tasks} alt="" />
-              <p>List Tasks</p>
+    <div className={styles["todo-cont-wrap"]}>
+      <div className={styles["todo-cont"]}>
+        <div className={styles["top-nav"]}>
+          <div className={styles["top-nav-inner"]}>
+            <div className={styles["tabs"]}>
+              <div>
+                <Image src={Tasks} alt="" />
+                <p>List Tasks</p>
+              </div>
+              <div className={styles["active"]}>
+                <Image src={Dashboard} alt="" />
+                <p>Boards</p>
+              </div>
+              <div>
+                <Image src={Calender} alt="" />
+                <p>Calendar</p>
+              </div>
+              <div>
+                <Image src={Gantt} alt="" />
+                <p>Gantt</p>
+              </div>
+              <div>
+                <Image src={TimeLine} alt="" />
+                <p>Timeline</p>
+              </div>
+              <div>
+                <Image src={Activity} alt="" />
+                <p>Activity</p>
+              </div>
             </div>
-            <div className={styles["active"]}>
-              <Image src={Dashboard} alt="" />
-              <p>Boards</p>
-            </div>
-            <div>
-              <Image src={Calender} alt="" />
-              <p>Calendar</p>
-            </div>
-            <div>
-              <Image src={Gantt} alt="" />
-              <p>Gantt</p>
-            </div>
-            <div>
-              <Image src={TimeLine} alt="" />
-              <p>Timeline</p>
-            </div>
-            <div>
-              <Image src={Activity} alt="" />
-              <p>Activity</p>
+            <div className={styles["search-bar"]}>
+              <input type="text" placeholder={"Search Tasks"} />
+              <Image src={Search} alt="" />
             </div>
           </div>
-
-          <div className={styles["search-bar"]}>
-            <input type="text" placeholder={"Search Tasks"} />
-            <Image src={Search} alt="" />
+          <div className={styles["top-nav-inner-mobile"]}>
+            <div className={styles["tabs-mobile"]}>
+              <span>
+                <Image src={LeftNav} alt="" />
+              </span>
+              <div className={styles["active"]}>
+                <Image src={Dashboard} alt="" />
+                <p>Boards</p>
+              </div>
+              <span>
+                <Image src={RightNav} alt="" />
+              </span>
+            </div>
+            <IconButton svg={Search} />
           </div>
         </div>
-        <div className={styles["top-nav-inner-mobile"]}>
-          <div className={styles["tabs-mobile"]}>
-            <span>
-              <Image src={LeftNav} alt="" />
-            </span>
-            <div className={styles["active"]}>
-              <Image src={Dashboard} alt="" />
-              <p>Boards</p>
-            </div>
-            <span>
-              <Image src={RightNav} alt="" />
-            </span>
-          </div>
-          <IconButton svg={Search} />
+        <div className={styles["todo-col-cont"]}>
+          <TodoCol title={"TO DO"} color={"#8833FF"} tasks={taskTodo} />
+          <TodoCol title={"IN WORK"} color={"#33BFFF"} tasks={taskWork} />
+          <TodoCol
+            title={"REVIEW"}
+            color={"#FFCB33"}
+            tasks={taskReview}
+            newTask={true}
+            notAddTask={true}
+          />
+          <TodoCol
+            title={"DONE"}
+            color={"#29CC39"}
+            tasks={taskDone}
+            notAddTask={true}
+          />
         </div>
-      </div>
-
-      <div className={styles["todo-col-cont"]}>
-        <TodoCol title={"TO DO"} color={"#8833FF"} tasks={taskTodo} />
-        <TodoCol title={"IN WORK"} color={"#33BFFF"} tasks={taskWork} />
-        <TodoCol
-          title={"REVIEW"}
-          color={"#FFCB33"}
-          tasks={taskReview}
-          newTask={true}
-          notAddTask={true}
-        />
-        <TodoCol
-          title={"DONE"}
-          color={"#29CC39"}
-          tasks={taskDone}
-          notAddTask={true}
-        />
       </div>
     </div>
   );

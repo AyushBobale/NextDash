@@ -45,8 +45,8 @@ const Navbar = () => {
           <p>Clayton Santos</p>
         </span>
         <div className={styles["noti-cont"]}>
+          <IconButton svg={Notification} noti={{ color: "#E62E7B" }} />
           <IconButton svg={Close} />
-          <IconButton svg={Notification} />
         </div>
       </div>
     </nav>

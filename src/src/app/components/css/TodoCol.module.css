@@ -76,6 +76,9 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  /* max-height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none; */
 }
 
 .new-task {

@@ -21,13 +21,14 @@ const Sidebar = () => {
       <div className={styles.top}>
         <IconButton svg={ExploreCircle} />
         <IconButton svg={Star} />
-        <IconButton svg={Message} />
+        <IconButton svg={Message} noti={{ color: "var(--primary-hl)" }} />
         <IconButton svg={Trend} />
         <IconButton svg={Earth} />
         <IconButton svg={Org} />
       </div>
       <div className={styles.btm}>
         <div style={{ background: "#FF6633" }}>
+          <span className={styles["dot"]}></span>
           <Image src={Profile1} alt="Icon" />
         </div>
         <div style={{ background: "#E62E7B" }}>

@@ -30,6 +30,7 @@
 }
 
 .btm > div {
+  position: relative;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -42,6 +43,16 @@
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+
+.dot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #3361ff;
 }
 
 @media screen and (max-width: 1400px) {
