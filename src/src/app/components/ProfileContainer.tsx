@@ -46,6 +46,7 @@ const ProfileContainer = () => {
             <Image priority src={Dashboard} alt="account" />
             Dashboard
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Dashboard} alt="account" />
               Dashboard
             </div>
@@ -53,7 +54,8 @@ const ProfileContainer = () => {
           <div>
             <Image priority src={Tasks} alt="account" />
             Notes
-            <div>
+            <div className={styles["active-tab"]}>
+              <span className={styles["dot"]}></span>
               <Image priority src={Tasks} alt="account" />
               Notes
             </div>
@@ -62,6 +64,7 @@ const ProfileContainer = () => {
             <Image priority src={Tasks} alt="account" />
             Tasks
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Tasks} alt="account" />
               Tasks
             </div>
@@ -70,6 +73,7 @@ const ProfileContainer = () => {
             <Image priority src={Cloud} alt="account" />
             Files
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Cloud} alt="account" />
               Files
             </div>
@@ -78,6 +82,7 @@ const ProfileContainer = () => {
             <Image priority src={Email} alt="account" />
             Emails
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Email} alt="account" />
               Emails
             </div>
@@ -86,6 +91,7 @@ const ProfileContainer = () => {
             <Image priority src={Group} alt="account" />
             Clients
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Group} alt="account" />
               Clients
             </div>
@@ -94,6 +100,7 @@ const ProfileContainer = () => {
             <Image priority src={Calender} alt="account" />
             Calendars
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Calender} alt="account" />
               Calenders
             </div>
@@ -102,6 +109,7 @@ const ProfileContainer = () => {
             <Image priority src={Settings} alt="account" />
             Settings
             <div>
+              <span className={styles["dot"]}></span>
               <Image priority src={Settings} alt="account" />
               Settings
             </div>

@@ -135,6 +135,20 @@
   display: flex;
 }
 
+.active-tab {
+  display: flex !important;
+}
+
+.dot {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #3361ff;
+}
+
 .tabs-grid > div > div > img {
   filter: invert(32%) sepia(100%) saturate(3442%) hue-rotate(198deg)
     brightness(91%) contrast(101%);
@@ -142,6 +156,7 @@
 
 .tabs-grid > div > div {
   /* display: flex;*/
+  position: relative;
   display: none;
   align-items: center;
   justify-content: center;
